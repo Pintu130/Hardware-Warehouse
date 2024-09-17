@@ -67,8 +67,8 @@ const Sidebar = () => {
             </span>
           </Link>
           <Link
-            to="home"
-            smooth={true}
+            to="products"
+            smooth={true} 
             duration={500}
             className="cursor-pointer bg-[#0f766e] hover:bg-[#0d9488] rounded-md p-2"
             onClick={() => setIsOpen(false)} // Close sidebar after clicking

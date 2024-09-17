@@ -3,6 +3,7 @@ import HomeSection from "../Page/HomeSection";
 import ContactUS from "../Page/ContactUS";
 import Sidebar from "../Component/Sidebar";
 import ScrollTop from "../Common/ScrollTop";
+import Products from "../Page/Products";
 
 const MainRoute = () => {
   return (
@@ -14,6 +15,9 @@ const MainRoute = () => {
         </div>
         <div id="contact"> {/* Add the id for smooth scrolling */}
           <ContactUS />
+        </div>
+        <div id="products"> {/* Add the id for smooth scrolling */}
+          <Products />
         </div>
       </div>
       <ScrollTop />

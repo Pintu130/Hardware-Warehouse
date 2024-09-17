@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { hero } from "../Assets";
+import { action } from "../Assets";
 import EnquiryModel from "../Common/EnquiryModel";
 
 const HomeSection = () => {
@@ -31,10 +32,18 @@ const HomeSection = () => {
     <div className="relative w-full h-screen">
       {/* Use h-screen for full height */}
       {/* Image */}
-      <img src={hero} alt="hero" className="w-full h-full object-cover" />
+      <img
+        src={hero}
+        alt="hero"
+        className="w-full h-full object-cover hidden md:block"
+      />
+      <img
+        src={action}
+        alt="hero"
+        className="w-full h-full object-cover md:hidden"
+      />
       {/* Black overlay */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      {/* Black overlay with 50% opacity */}
       {/* Text on top of the image and black overlay */}
       <div className="absolute inset-0 flex flex-col justify-center items-center text-center px-4">
         <h1 className="text-white text-3xl xs:text-4xl sm:text-5xl lg:text-7xl font-bold mb-4">
@@ -57,7 +66,9 @@ const HomeSection = () => {
         </div>
       </div>
 
-      {isModalOpen && <EnquiryModel isModalOpen={isModalOpen} toggleModal={toggleModal} />}
+      {isModalOpen && (
+        <EnquiryModel isModalOpen={isModalOpen} toggleModal={toggleModal} />
+      )}
     </div>
   );
 };
