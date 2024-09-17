@@ -4,6 +4,7 @@ import ContactUS from "../Page/ContactUS";
 import Sidebar from "../Component/Sidebar";
 import ScrollTop from "../Common/ScrollTop";
 import Products from "../Page/Products";
+import About from "../Page/About";
 
 const MainRoute = () => {
   return (
@@ -18,6 +19,9 @@ const MainRoute = () => {
         </div>
         <div id="products"> {/* Add the id for smooth scrolling */}
           <Products />
+        </div>
+        <div id="about"> {/* Add the id for smooth scrolling */}
+          <About />
         </div>
       </div>
       <ScrollTop />

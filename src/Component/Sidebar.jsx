@@ -79,7 +79,7 @@ const Sidebar = () => {
             </span>
           </Link>
           <Link
-            to="home"
+            to="about"
             smooth={true}
             duration={500}
             className="cursor-pointer bg-[#0f766e] hover:bg-[#0d9488] rounded-md p-2"
