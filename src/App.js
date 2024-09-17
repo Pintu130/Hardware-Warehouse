@@ -1,5 +1,11 @@
+import MainRoute from "./Routes";
+
 function App() {
-  return <>jay ganesha</>;
+  return (
+    <>
+      <MainRoute />
+    </>
+  );
 }
 
 export default App;
