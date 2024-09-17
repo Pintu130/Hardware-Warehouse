@@ -1,5 +1,4 @@
 import React from 'react';
-import Gallery from 'react-photo-gallery';
 import { p1, p10, p11, p12, p2, p3, p4, p5, p6, p7, p8, p9 } from '../Assets';
 
 // Array of product images
