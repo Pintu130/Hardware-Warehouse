@@ -2,12 +2,13 @@ import React from "react";
 import HomeSection from "../Page/HomeSection";
 import ContactUS from "../Page/ContactUS";
 import Sidebar from "../Component/Sidebar";
+import ScrollTop from "../Common/ScrollTop";
 
 const MainRoute = () => {
   return (
     <div>
       <Sidebar />
-      <div className="ml-0 md:ml-64 pl-1">
+      <div className="ml-0 md:ml-64">
         <div id="home"> {/* Add the id for smooth scrolling */}
           <HomeSection />
         </div>
@@ -15,6 +16,7 @@ const MainRoute = () => {
           <ContactUS />
         </div>
       </div>
+      <ScrollTop />
     </div>
   );
 };
