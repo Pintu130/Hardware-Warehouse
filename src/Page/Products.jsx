@@ -26,6 +26,8 @@ const Products = () => {
     height: product.height,
     alt: product.name,
   }));
+  console.log();
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
